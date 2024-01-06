@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0E99682B3C5C6A00D2AAD8 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E99662B3C5C6A00D2AAD8 /* Realm.framework */; };
+		0C0E996A2B3C5C6A00D2AAD8 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E99672B3C5C6A00D2AAD8 /* RealmSwift.framework */; };
+		0C0FA6302B17698E00A073AB /* alchemist_loggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0FA62F2B17698E00A073AB /* alchemist_loggerApp.swift */; };
+		0C0FA6322B17698E00A073AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0FA6312B17698E00A073AB /* ContentView.swift */; };
+		0C0FA6342B17699300A073AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0FA6332B17699300A073AB /* Assets.xcassets */; };
+		0C0FA6382B17699300A073AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0FA6372B17699300A073AB /* Preview Assets.xcassets */; };
+		0C0FA6422B17699400A073AB /* alchemist_loggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0FA6412B17699400A073AB /* alchemist_loggerTests.swift */; };
+		0C0FA64C2B17699500A073AB /* alchemist_loggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0FA64B2B17699500A073AB /* alchemist_loggerUITests.swift */; };
+		0C0FA64E2B17699500A073AB /* alchemist_loggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0FA64D2B17699500A073AB /* alchemist_loggerUITestsLaunchTests.swift */; };
+		0C1B60062B459BA900D52A03 /* InputStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B60052B459BA900D52A03 /* InputStatusView.swift */; };
+		0C1B60072B459BA900D52A03 /* InputStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B60052B459BA900D52A03 /* InputStatusView.swift */; };
+		0C1B60092B459D6B00D52A03 /* InputEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B60082B459D6B00D52A03 /* InputEquipmentView.swift */; };
+		0C1B600A2B459D6B00D52A03 /* InputEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B60082B459D6B00D52A03 /* InputEquipmentView.swift */; };
+		0C3EE00A2B24A8A600F0F6AD /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 0C3EE0092B24A8A600F0F6AD /* docs */; };
+		0C3EE00C2B24A8C100F0F6AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0C3EE00B2B24A8C100F0F6AD /* README.md */; };
+		0C79A1F12B30855E00119DC2 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1F02B30855E00119DC2 /* UserInfoModel.swift */; };
+		0C79A1F22B30855E00119DC2 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1F02B30855E00119DC2 /* UserInfoModel.swift */; };
+		0C79A1F42B30859D00119DC2 /* ActionLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1F32B30859D00119DC2 /* ActionLogModel.swift */; };
+		0C79A1F52B30859D00119DC2 /* ActionLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1F32B30859D00119DC2 /* ActionLogModel.swift */; };
+		0C79A1F72B3088BD00119DC2 /* MixResultLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1F62B3088BC00119DC2 /* MixResultLog.swift */; };
+		0C79A1F82B3088BD00119DC2 /* MixResultLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1F62B3088BC00119DC2 /* MixResultLog.swift */; };
+		0C79A1FA2B30895F00119DC2 /* PersonalBattleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1F92B30895F00119DC2 /* PersonalBattleLog.swift */; };
+		0C79A1FB2B30895F00119DC2 /* PersonalBattleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1F92B30895F00119DC2 /* PersonalBattleLog.swift */; };
+		0C79A1FD2B308AF900119DC2 /* TeamBattleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1FC2B308AF900119DC2 /* TeamBattleLog.swift */; };
+		0C79A1FE2B308AF900119DC2 /* TeamBattleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1FC2B308AF900119DC2 /* TeamBattleLog.swift */; };
+		0C79A2002B308BB100119DC2 /* PetRaceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1FF2B308BB100119DC2 /* PetRaceLog.swift */; };
+		0C79A2012B308BB100119DC2 /* PetRaceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A1FF2B308BB100119DC2 /* PetRaceLog.swift */; };
+		0C79A2032B308C3800119DC2 /* GamblingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A2022B308C3800119DC2 /* GamblingLog.swift */; };
+		0C79A2042B308C3800119DC2 /* GamblingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A2022B308C3800119DC2 /* GamblingLog.swift */; };
+		0C79A2062B308C9B00119DC2 /* SalesLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A2052B308C9B00119DC2 /* SalesLog.swift */; };
+		0C79A2072B308C9B00119DC2 /* SalesLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A2052B308C9B00119DC2 /* SalesLog.swift */; };
+		0C79A2092B308CFF00119DC2 /* PreferredCustomerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A2082B308CFF00119DC2 /* PreferredCustomerList.swift */; };
+		0C79A20A2B308CFF00119DC2 /* PreferredCustomerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79A2082B308CFF00119DC2 /* PreferredCustomerList.swift */; };
+		0CF8D6F92B3C681D008EB854 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8D6F82B3C681D008EB854 /* UserSettingView.swift */; };
+		0CF8D6FA2B3C681D008EB854 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8D6F82B3C681D008EB854 /* UserSettingView.swift */; };
+		0CF8D6FB2B3C681D008EB854 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8D6F82B3C681D008EB854 /* UserSettingView.swift */; };
+		44A6785133C39DF72E61E721 /* Pods_alchemist_loggerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7ADFD4DBB90538645BB1F6 /* Pods_alchemist_loggerUITests.framework */; };
+		7A90A50D7B428E11808D2191 /* Pods_alchemist_logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D8D737AE7691932F05FBA0 /* Pods_alchemist_logger.framework */; };
+		EE7E166FD3DC99BB8C32EBE7 /* Pods_alchemist_loggerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C583F4B8653B79933A8F233 /* Pods_alchemist_loggerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C0FA63E2B17699400A073AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C0FA6242B17698E00A073AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0FA62B2B17698E00A073AB;
+			remoteInfo = "alchemist-logger";
+		};
+		0C0FA6482B17699500A073AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C0FA6242B17698E00A073AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0FA62B2B17698E00A073AB;
+			remoteInfo = "alchemist-logger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C0E99662B3C5C6A00D2AAD8 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0E99672B3C5C6A00D2AAD8 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0FA62C2B17698E00A073AB /* alchemist-logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alchemist-logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0FA62F2B17698E00A073AB /* alchemist_loggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alchemist_loggerApp.swift; sourceTree = "<group>"; };
+		0C0FA6312B17698E00A073AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0C0FA6332B17699300A073AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C0FA6352B17699300A073AB /* alchemist_logger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = alchemist_logger.entitlements; sourceTree = "<group>"; };
+		0C0FA6372B17699300A073AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C0FA63D2B17699400A073AB /* alchemist-loggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "alchemist-loggerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0FA6412B17699400A073AB /* alchemist_loggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alchemist_loggerTests.swift; sourceTree = "<group>"; };
+		0C0FA6472B17699500A073AB /* alchemist-loggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "alchemist-loggerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0FA64B2B17699500A073AB /* alchemist_loggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alchemist_loggerUITests.swift; sourceTree = "<group>"; };
+		0C0FA64D2B17699500A073AB /* alchemist_loggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alchemist_loggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C1B60052B459BA900D52A03 /* InputStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStatusView.swift; sourceTree = "<group>"; };
+		0C1B60082B459D6B00D52A03 /* InputEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEquipmentView.swift; sourceTree = "<group>"; };
+		0C3EE0092B24A8A600F0F6AD /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
+		0C3EE00B2B24A8C100F0F6AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0C79A1F02B30855E00119DC2 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		0C79A1F32B30859D00119DC2 /* ActionLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLogModel.swift; sourceTree = "<group>"; };
+		0C79A1F62B3088BC00119DC2 /* MixResultLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixResultLog.swift; sourceTree = "<group>"; };
+		0C79A1F92B30895F00119DC2 /* PersonalBattleLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalBattleLog.swift; sourceTree = "<group>"; };
+		0C79A1FC2B308AF900119DC2 /* TeamBattleLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBattleLog.swift; sourceTree = "<group>"; };
+		0C79A1FF2B308BB100119DC2 /* PetRaceLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRaceLog.swift; sourceTree = "<group>"; };
+		0C79A2022B308C3800119DC2 /* GamblingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamblingLog.swift; sourceTree = "<group>"; };
+		0C79A2052B308C9B00119DC2 /* SalesLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesLog.swift; sourceTree = "<group>"; };
+		0C79A2082B308CFF00119DC2 /* PreferredCustomerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredCustomerList.swift; sourceTree = "<group>"; };
+		0CF8D6F82B3C681D008EB854 /* UserSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingView.swift; sourceTree = "<group>"; };
+		2C583F4B8653B79933A8F233 /* Pods_alchemist_loggerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alchemist_loggerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCD370C45A5CE685D2018AB /* Pods-alchemist-loggerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alchemist-loggerTests.debug.xcconfig"; path = "Target Support Files/Pods-alchemist-loggerTests/Pods-alchemist-loggerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5471449DD6B89E1C32A017 /* Pods-alchemist-loggerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alchemist-loggerUITests.debug.xcconfig"; path = "Target Support Files/Pods-alchemist-loggerUITests/Pods-alchemist-loggerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		874F3A17BF517277691C6E5A /* Pods-alchemist-loggerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alchemist-loggerTests.release.xcconfig"; path = "Target Support Files/Pods-alchemist-loggerTests/Pods-alchemist-loggerTests.release.xcconfig"; sourceTree = "<group>"; };
+		88270F78F3BADB65E0ED4AEF /* Pods-alchemist-loggerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alchemist-loggerUITests.release.xcconfig"; path = "Target Support Files/Pods-alchemist-loggerUITests/Pods-alchemist-loggerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A679A813F8515C52705A9C3 /* Pods-alchemist-logger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alchemist-logger.release.xcconfig"; path = "Target Support Files/Pods-alchemist-logger/Pods-alchemist-logger.release.xcconfig"; sourceTree = "<group>"; };
+		9B7ADFD4DBB90538645BB1F6 /* Pods_alchemist_loggerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alchemist_loggerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC2EA8F0466645C39E1A4C4 /* Pods-alchemist-logger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alchemist-logger.debug.xcconfig"; path = "Target Support Files/Pods-alchemist-logger/Pods-alchemist-logger.debug.xcconfig"; sourceTree = "<group>"; };
+		C9D8D737AE7691932F05FBA0 /* Pods_alchemist_logger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alchemist_logger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C0FA6292B17698E00A073AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0E99682B3C5C6A00D2AAD8 /* Realm.framework in Frameworks */,
+				7A90A50D7B428E11808D2191 /* Pods_alchemist_logger.framework in Frameworks */,
+				0C0E996A2B3C5C6A00D2AAD8 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0FA63A2B17699400A073AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7E166FD3DC99BB8C32EBE7 /* Pods_alchemist_loggerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0FA6442B17699500A073AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A6785133C39DF72E61E721 /* Pods_alchemist_loggerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033F42F2F56F1A9DC63B89A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E99662B3C5C6A00D2AAD8 /* Realm.framework */,
+				0C0E99672B3C5C6A00D2AAD8 /* RealmSwift.framework */,
+				C9D8D737AE7691932F05FBA0 /* Pods_alchemist_logger.framework */,
+				2C583F4B8653B79933A8F233 /* Pods_alchemist_loggerTests.framework */,
+				9B7ADFD4DBB90538645BB1F6 /* Pods_alchemist_loggerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C0FA6232B17698E00A073AB = {
+			isa = PBXGroup;
+			children = (
+				0C3EE00B2B24A8C100F0F6AD /* README.md */,
+				0C3EE0092B24A8A600F0F6AD /* docs */,
+				0C0FA62E2B17698E00A073AB /* alchemist-logger */,
+				0C0FA6402B17699400A073AB /* alchemist-loggerTests */,
+				0C0FA64A2B17699500A073AB /* alchemist-loggerUITests */,
+				0C0FA62D2B17698E00A073AB /* Products */,
+				CA72BD1F650A48F645CBCD10 /* Pods */,
+				033F42F2F56F1A9DC63B89A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C0FA62D2B17698E00A073AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FA62C2B17698E00A073AB /* alchemist-logger.app */,
+				0C0FA63D2B17699400A073AB /* alchemist-loggerTests.xctest */,
+				0C0FA6472B17699500A073AB /* alchemist-loggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C0FA62E2B17698E00A073AB /* alchemist-logger */ = {
+			isa = PBXGroup;
+			children = (
+				0C9B890C2B3480BF00F7A286 /* UI */,
+				0C79A1EF2B3084D300119DC2 /* db */,
+				0C0FA62F2B17698E00A073AB /* alchemist_loggerApp.swift */,
+				0C0FA6332B17699300A073AB /* Assets.xcassets */,
+				0C0FA6352B17699300A073AB /* alchemist_logger.entitlements */,
+				0C0FA6362B17699300A073AB /* Preview Content */,
+			);
+			path = "alchemist-logger";
+			sourceTree = "<group>";
+		};
+		0C0FA6362B17699300A073AB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FA6372B17699300A073AB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C0FA6402B17699400A073AB /* alchemist-loggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FA6412B17699400A073AB /* alchemist_loggerTests.swift */,
+			);
+			path = "alchemist-loggerTests";
+			sourceTree = "<group>";
+		};
+		0C0FA64A2B17699500A073AB /* alchemist-loggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FA64B2B17699500A073AB /* alchemist_loggerUITests.swift */,
+				0C0FA64D2B17699500A073AB /* alchemist_loggerUITestsLaunchTests.swift */,
+			);
+			path = "alchemist-loggerUITests";
+			sourceTree = "<group>";
+		};
+		0C79A1EF2B3084D300119DC2 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				0C79A1F02B30855E00119DC2 /* UserInfoModel.swift */,
+				0C79A1F32B30859D00119DC2 /* ActionLogModel.swift */,
+				0C79A1F62B3088BC00119DC2 /* MixResultLog.swift */,
+				0C79A1F92B30895F00119DC2 /* PersonalBattleLog.swift */,
+				0C79A1FC2B308AF900119DC2 /* TeamBattleLog.swift */,
+				0C79A1FF2B308BB100119DC2 /* PetRaceLog.swift */,
+				0C79A2022B308C3800119DC2 /* GamblingLog.swift */,
+				0C79A2052B308C9B00119DC2 /* SalesLog.swift */,
+				0C79A2082B308CFF00119DC2 /* PreferredCustomerList.swift */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		0C9B890C2B3480BF00F7A286 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FA6312B17698E00A073AB /* ContentView.swift */,
+				0CF8D6F82B3C681D008EB854 /* UserSettingView.swift */,
+				0C1B60052B459BA900D52A03 /* InputStatusView.swift */,
+				0C1B60082B459D6B00D52A03 /* InputEquipmentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA72BD1F650A48F645CBCD10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EC2EA8F0466645C39E1A4C4 /* Pods-alchemist-logger.debug.xcconfig */,
+				8A679A813F8515C52705A9C3 /* Pods-alchemist-logger.release.xcconfig */,
+				4FCD370C45A5CE685D2018AB /* Pods-alchemist-loggerTests.debug.xcconfig */,
+				874F3A17BF517277691C6E5A /* Pods-alchemist-loggerTests.release.xcconfig */,
+				5B5471449DD6B89E1C32A017 /* Pods-alchemist-loggerUITests.debug.xcconfig */,
+				88270F78F3BADB65E0ED4AEF /* Pods-alchemist-loggerUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C0FA62B2B17698E00A073AB /* alchemist-logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0FA6512B17699500A073AB /* Build configuration list for PBXNativeTarget "alchemist-logger" */;
+			buildPhases = (
+				9AE6711FB13AFD4AB34670E0 /* [CP] Check Pods Manifest.lock */,
+				0C0FA6282B17698E00A073AB /* Sources */,
+				0C0FA6292B17698E00A073AB /* Frameworks */,
+				0C0FA62A2B17698E00A073AB /* Resources */,
+				79597A7CD3CC961E569801E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "alchemist-logger";
+			productName = "alchemist-logger";
+			productReference = 0C0FA62C2B17698E00A073AB /* alchemist-logger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C0FA63C2B17699400A073AB /* alchemist-loggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0FA6542B17699500A073AB /* Build configuration list for PBXNativeTarget "alchemist-loggerTests" */;
+			buildPhases = (
+				CC45F9EB7929C35E88A57BB7 /* [CP] Check Pods Manifest.lock */,
+				0C0FA6392B17699400A073AB /* Sources */,
+				0C0FA63A2B17699400A073AB /* Frameworks */,
+				0C0FA63B2B17699400A073AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0FA63F2B17699400A073AB /* PBXTargetDependency */,
+			);
+			name = "alchemist-loggerTests";
+			productName = "alchemist-loggerTests";
+			productReference = 0C0FA63D2B17699400A073AB /* alchemist-loggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C0FA6462B17699500A073AB /* alchemist-loggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0FA6572B17699500A073AB /* Build configuration list for PBXNativeTarget "alchemist-loggerUITests" */;
+			buildPhases = (
+				A9FB3555610F8E4FFEC2AA01 /* [CP] Check Pods Manifest.lock */,
+				0C0FA6432B17699500A073AB /* Sources */,
+				0C0FA6442B17699500A073AB /* Frameworks */,
+				0C0FA6452B17699500A073AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0FA6492B17699500A073AB /* PBXTargetDependency */,
+			);
+			name = "alchemist-loggerUITests";
+			productName = "alchemist-loggerUITests";
+			productReference = 0C0FA6472B17699500A073AB /* alchemist-loggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C0FA6242B17698E00A073AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0C0FA62B2B17698E00A073AB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0C0FA63C2B17699400A073AB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0C0FA62B2B17698E00A073AB;
+					};
+					0C0FA6462B17699500A073AB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0C0FA62B2B17698E00A073AB;
+					};
+				};
+			};
+			buildConfigurationList = 0C0FA6272B17698E00A073AB /* Build configuration list for PBXProject "alchemist-logger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C0FA6232B17698E00A073AB;
+			productRefGroup = 0C0FA62D2B17698E00A073AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C0FA62B2B17698E00A073AB /* alchemist-logger */,
+				0C0FA63C2B17699400A073AB /* alchemist-loggerTests */,
+				0C0FA6462B17699500A073AB /* alchemist-loggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C0FA62A2B17698E00A073AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3EE00A2B24A8A600F0F6AD /* docs in Resources */,
+				0C0FA6382B17699300A073AB /* Preview Assets.xcassets in Resources */,
+				0C3EE00C2B24A8C100F0F6AD /* README.md in Resources */,
+				0C0FA6342B17699300A073AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0FA63B2B17699400A073AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0FA6452B17699500A073AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79597A7CD3CC961E569801E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alchemist-logger/Pods-alchemist-logger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alchemist-logger/Pods-alchemist-logger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alchemist-logger/Pods-alchemist-logger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE6711FB13AFD4AB34670E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alchemist-logger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9FB3555610F8E4FFEC2AA01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alchemist-loggerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC45F9EB7929C35E88A57BB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alchemist-loggerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C0FA6282B17698E00A073AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1B60092B459D6B00D52A03 /* InputEquipmentView.swift in Sources */,
+				0CF8D6F92B3C681D008EB854 /* UserSettingView.swift in Sources */,
+				0C79A1F42B30859D00119DC2 /* ActionLogModel.swift in Sources */,
+				0C79A2002B308BB100119DC2 /* PetRaceLog.swift in Sources */,
+				0C79A1F12B30855E00119DC2 /* UserInfoModel.swift in Sources */,
+				0C79A2062B308C9B00119DC2 /* SalesLog.swift in Sources */,
+				0C79A1FD2B308AF900119DC2 /* TeamBattleLog.swift in Sources */,
+				0C1B60062B459BA900D52A03 /* InputStatusView.swift in Sources */,
+				0C79A1FA2B30895F00119DC2 /* PersonalBattleLog.swift in Sources */,
+				0C0FA6322B17698E00A073AB /* ContentView.swift in Sources */,
+				0C79A1F72B3088BD00119DC2 /* MixResultLog.swift in Sources */,
+				0C0FA6302B17698E00A073AB /* alchemist_loggerApp.swift in Sources */,
+				0C79A2092B308CFF00119DC2 /* PreferredCustomerList.swift in Sources */,
+				0C79A2032B308C3800119DC2 /* GamblingLog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0FA6392B17699400A073AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C79A1F82B3088BD00119DC2 /* MixResultLog.swift in Sources */,
+				0C79A1FB2B30895F00119DC2 /* PersonalBattleLog.swift in Sources */,
+				0CF8D6FA2B3C681D008EB854 /* UserSettingView.swift in Sources */,
+				0C79A2012B308BB100119DC2 /* PetRaceLog.swift in Sources */,
+				0C79A1F52B30859D00119DC2 /* ActionLogModel.swift in Sources */,
+				0C79A1F22B30855E00119DC2 /* UserInfoModel.swift in Sources */,
+				0C0FA6422B17699400A073AB /* alchemist_loggerTests.swift in Sources */,
+				0C79A1FE2B308AF900119DC2 /* TeamBattleLog.swift in Sources */,
+				0C79A20A2B308CFF00119DC2 /* PreferredCustomerList.swift in Sources */,
+				0C79A2072B308C9B00119DC2 /* SalesLog.swift in Sources */,
+				0C79A2042B308C3800119DC2 /* GamblingLog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0FA6432B17699500A073AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF8D6FB2B3C681D008EB854 /* UserSettingView.swift in Sources */,
+				0C1B600A2B459D6B00D52A03 /* InputEquipmentView.swift in Sources */,
+				0C0FA64C2B17699500A073AB /* alchemist_loggerUITests.swift in Sources */,
+				0C0FA64E2B17699500A073AB /* alchemist_loggerUITestsLaunchTests.swift in Sources */,
+				0C1B60072B459BA900D52A03 /* InputStatusView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C0FA63F2B17699400A073AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C0FA62B2B17698E00A073AB /* alchemist-logger */;
+			targetProxy = 0C0FA63E2B17699400A073AB /* PBXContainerItemProxy */;
+		};
+		0C0FA6492B17699500A073AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C0FA62B2B17698E00A073AB /* alchemist-logger */;
+			targetProxy = 0C0FA6482B17699500A073AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C0FA64F2B17699500A073AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C0FA6502B17699500A073AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0C0FA6522B17699500A073AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC2EA8F0466645C39E1A4C4 /* Pods-alchemist-logger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "alchemist-logger/alchemist_logger.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"alchemist-logger/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Y88HPN889;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "あるけみロガー";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.massu.app.alchemist-logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C0FA6532B17699500A073AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A679A813F8515C52705A9C3 /* Pods-alchemist-logger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "alchemist-logger/alchemist_logger.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"alchemist-logger/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Y88HPN889;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "あるけみロガー";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.massu.app.alchemist-logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C0FA6552B17699500A073AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FCD370C45A5CE685D2018AB /* Pods-alchemist-loggerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Y88HPN889;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.massu.app.alchemist-loggerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/alchemist-logger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/alchemist-logger";
+			};
+			name = Debug;
+		};
+		0C0FA6562B17699500A073AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874F3A17BF517277691C6E5A /* Pods-alchemist-loggerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Y88HPN889;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.massu.app.alchemist-loggerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/alchemist-logger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/alchemist-logger";
+			};
+			name = Release;
+		};
+		0C0FA6582B17699500A073AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B5471449DD6B89E1C32A017 /* Pods-alchemist-loggerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Y88HPN889;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.massu.app.alchemist-loggerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "alchemist-logger";
+			};
+			name = Debug;
+		};
+		0C0FA6592B17699500A073AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88270F78F3BADB65E0ED4AEF /* Pods-alchemist-loggerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Y88HPN889;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.massu.app.alchemist-loggerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "alchemist-logger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0FA6272B17698E00A073AB /* Build configuration list for PBXProject "alchemist-logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0FA64F2B17699500A073AB /* Debug */,
+				0C0FA6502B17699500A073AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0FA6512B17699500A073AB /* Build configuration list for PBXNativeTarget "alchemist-logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0FA6522B17699500A073AB /* Debug */,
+				0C0FA6532B17699500A073AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0FA6542B17699500A073AB /* Build configuration list for PBXNativeTarget "alchemist-loggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0FA6552B17699500A073AB /* Debug */,
+				0C0FA6562B17699500A073AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0FA6572B17699500A073AB /* Build configuration list for PBXNativeTarget "alchemist-loggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0FA6582B17699500A073AB /* Debug */,
+				0C0FA6592B17699500A073AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C0FA6242B17698E00A073AB /* Project object */;
+}
